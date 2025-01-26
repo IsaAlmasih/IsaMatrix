@@ -7,9 +7,12 @@ import React from "react";
 
 const page = () => {
   return (
-    <Link href={"/price"} className={styles.wrapper}>
-      Тапатим.
-    </Link>
+    <div className={styles.wrapper}>
+      <Link href={"/"}>Название.</Link>
+      <a href={"/Реквизиты.docx"}>Политика.</a>
+      <Link href={"/price"}>Реквизиты.</Link>
+      <Link href={"/price"}>Пользовательское..</Link>
+    </div>
   );
 };
 

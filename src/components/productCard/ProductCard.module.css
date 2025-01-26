@@ -5,7 +5,9 @@
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    width: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
     transition: transform 0.2s;
     font-size: 30px;
     gap: 10px;

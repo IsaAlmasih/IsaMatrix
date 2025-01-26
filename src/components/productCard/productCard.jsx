@@ -8,8 +8,9 @@ import { useState } from "react";
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { MatrixRainCart } from "../MatrixRainCart/MatrixRainCart";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, hasMatrixRain }) => {
   const addToCart = useStore((state) => state.addToCart);
   const {
     cart,
@@ -42,17 +43,16 @@ const ProductCard = ({ product }) => {
         src={product.image}
         alt={product.name}
         className={styles.image}
-        width={200}
-        height={200}
+        width={150}
+        height={150}
       />
+      {hasMatrixRain && <MatrixRainCart></MatrixRainCart>}
       <Link href={product.link}>
         <h3 className={styles.name}>{product.name}</h3>
       </Link>
 
       {/* <p className={styles.price}>{product.price}p</p> */}
-      <a href={product.link}>
-        {/* <button>Описание</button> */}
-      </a>
+      <a href={product.link}>{/* <button>Описание</button> */}</a>
       {/* <button
         className={styles.button}
         onClick={() => {

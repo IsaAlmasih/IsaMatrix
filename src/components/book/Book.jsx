@@ -52,18 +52,23 @@ const Book = (props) => {
             <>{props.text2}</>
           </div>
           <div className={styles.thirdPage}>
-            <textarea name="" defaultValue="Дима, это победа."></textarea>
+            <>{props.text3}</>
           </div>
           <div className={styles.secondPage}>
-            <textarea
-              name=""
-              defaultValue="Привет Дима, это победа."
-            ></textarea>
+            <>{props.text4}</>
           </div>
-          <div className={styles.firstPage}></div>
-          <div className={styles.secondPage}></div>
-          <div className={styles.firstPage}>Page 7</div>
-          <div className={styles.secondPage}>Page 8</div>
+          <div className={styles.firstPage}>
+            <>{props.text5}</>
+          </div>
+          <div className={styles.secondPage}>
+            <>{props.text6}</>
+          </div>
+          <div className={styles.firstPage}>
+            <>{props.text7}</>
+          </div>
+          <div className={styles.secondPage}>
+            <>{props.text8}</>
+          </div>
         </HTMLFlipBook>
       </div>
       <button
