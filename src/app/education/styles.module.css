@@ -1,0 +1,62 @@
+.mainWrapper {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 10px;
+    z-index: 1;
+}
+
+.wrapper {
+    /* background-color: rgb(0, 0, 1); */
+    color: #ff0000;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 50%;
+    -webkit-box-shadow: -2px 0px 51px -6px rgba(212, 212, 212, 0.36);
+    -moz-box-shadow: -2px 0px 51px -6px rgba(212, 212, 212, 0.36);
+    box-shadow: -2px 0px 51px -6px rgba(212, 212, 212, 0.36);
+
+}
+
+.image img {
+max-width: 200px;
+object-fit: cover;
+}
+
+.image {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+}
+
+@media (max-width: 390px) {
+    .images {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 5px;
+}
+    .wrapper {
+    height: fit-content;
+    min-width: fit-content;
+    gap: 10px;
+}
+.text {
+    font-size: 15px;
+}
+}

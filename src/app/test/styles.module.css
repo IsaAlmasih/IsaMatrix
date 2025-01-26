@@ -1,0 +1,11 @@
+.wrapper {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    color: #0f1ccf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    gap: 20px;
+}
