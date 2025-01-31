@@ -22,7 +22,7 @@ const books = [
     description: "Краткое описание",
     price: 2000,
     author: "Pushkin",
-    link: "/detail",
+    link: "/ditails/detail1",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const books = [
     description: "Краткое описание",
     price: 2000,
     author: "Pushkin",
-    link: "/detail",
+    link: "/ditails/detail2",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const books = [
     description: "Краткое описание",
     price: 2000,
     author: "Pushkin",
-    link: "/detail",
+    link: "/ditails/detail3",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const books = [
     image,
     name: "Здесь может быть ваша книга",
     isbn: 123125135135,
-    link: "/detail",
+    link: "/ditails/detail4",
   },
 ];
 

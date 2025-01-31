@@ -2,24 +2,11 @@
 import React, { useEffect, useState } from 'react'
 
 import styles from './styles.module.css'
+import Link from 'next/link';
 
 const page = () => {
     const [res, setRes] = useState(null);
-    // const fetchBlocks = async () => {
-    //   try {
-    //     // Отправляем GET запрос
-    //     const response = await axios.get(
-    //       "http://localhost:8000/survey/api/blocks/"
-    //     );
-
-    //     // Выводим данные из ответа
-    //     console.log("Response Data:", response.data);
-    //     setRes(response.data)
-    //   } catch (error) {
-    //     // Обрабатываем ошибки
-    //     console.error("Error fetching blocks:", error);
-    //   }
-    // };
+    const [view,setView] = useState(null)
 useEffect(()=>{
       const fetchBlocks = async (blockData) => {
         try {
@@ -53,9 +40,33 @@ useEffect(()=>{
       };
       fetchBlocks()
 },[])
+useEffect (()=>{
+  setView(res)
+},[res])
+
   return (
-    <div className={styles.wrapper}>{res?res.map((item,index)=>(<div key={index}>{item.text}</div>)):""}</div>
-  )
+    <div className={styles.wrapper}>
+      <div className={styles.include}>
+        {view
+          ? view.map((item, index) => (
+              <button
+                className={styles.wrappe}
+                onClick={() => {
+                  setView(item.blocks);
+                }}
+                key={index}
+              >
+                {item.text}
+              </button>
+            ))
+          : ""}
+      </div>
+      <button onClick={() => setView(res)} className={styles.butt}>
+        {"<--"}Назад
+      </button>
+      <Link href={"/"}>Вернуться на главную.</Link>
+    </div>
+  );
 }
 
 export default page

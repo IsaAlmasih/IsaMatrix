@@ -4,7 +4,40 @@ import React from "react";
 
 import "./page.css";
 
+import useStore from "../../../stores/cart";
+import { useState } from "react";
+
 const page = () => {
+
+const product = {
+  id: 3,
+  name: "Папирус 4",
+  imag: "/",
+  price: "0",
+  quantity: "0",
+};
+
+const addToCart = useStore((state) => state.addToCart);
+const { cart, increaseQuantity, decreaseQuantity, removeFromCart, clearCart } =
+  useStore();
+
+const [quantity, setQuantity] = useState(1);
+const [isBuyed, setIsBuyed] = useState(
+  cart.find((cartItem) => cartItem.id === product.id) ? true : false
+);
+
+const handleIncrease = (itemId) => {
+  increaseQuantity(itemId);
+  setQuantity((prev) => prev + 1);
+};
+
+const handleDecrease = (itemId) => {
+  if (quantity > 1) {
+    decreaseQuantity(itemId);
+    setQuantity((prev) => prev - 1);
+  }
+};
+
   return (
     <div className="page detail-page">
       <div className="wrapper">
@@ -113,7 +146,39 @@ const page = () => {
               хотите сделать послание для потомков, папирус — достойны и
               единственный выбор!
             </p>
-            <button className="btn detail-page__btn">Добавить в корзину</button>
+            <button
+              // className={styles.button}
+              onClick={() => {
+                if (isBuyed) {
+                  removeFromCart(product.id);
+                  setIsBuyed(false);
+                } else {
+                  addToCart(product);
+                  setIsBuyed(true);
+                }
+              }}
+            >
+              {isBuyed ? "Удалить из корзины" : "Добавить в корзину."}
+            </button>
+            {isBuyed && (
+              <>
+                <span>
+                  {product.name} (x{quantity}) - {product.price}
+                </span>
+                <button
+                  onClick={() => handleIncrease(product.id)}
+                  style={{ marginLeft: "10px" }}
+                >
+                  +
+                </button>
+                <button
+                  onClick={() => handleDecrease(product.id)}
+                  style={{ marginLeft: "5px" }}
+                >
+                  -
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>

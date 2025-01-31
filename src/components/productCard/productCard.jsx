@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { MatrixRainCart } from "../MatrixRainCart/MatrixRainCart";
+// import { MatrixRainCart } from "../MatrixRainCart/MatrixRainCart";
 
 const ProductCard = ({ product, hasMatrixRain }) => {
   const addToCart = useStore((state) => state.addToCart);
@@ -46,13 +46,13 @@ const ProductCard = ({ product, hasMatrixRain }) => {
         width={150}
         height={150}
       />
-      {hasMatrixRain && <MatrixRainCart></MatrixRainCart>}
+      {/* {hasMatrixRain && <MatrixRainCart />} */}
       <Link href={product.link}>
         <h3 className={styles.name}>{product.name}</h3>
       </Link>
 
       {/* <p className={styles.price}>{product.price}p</p> */}
-      <a href={product.link}>{/* <button>Описание</button> */}</a>
+      {/* <a href={product.link}><button>Описание</button></a> */}
       {/* <button
         className={styles.button}
         onClick={() => {

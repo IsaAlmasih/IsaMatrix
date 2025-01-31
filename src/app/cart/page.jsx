@@ -75,11 +75,25 @@ const CartPage = () => {
               padding: "10px",
             }}
           >
+            Оплатить.
+          </button>
+          <button
+            onClick={handleClear}
+            style={{
+              marginTop: "20px",
+              backgroundColor: "red",
+              color: "white",
+              padding: "10px",
+            }}
+          >
             Очистить корзину
           </button>
         </div>
       )}
-      <button onClick={() => router.push("/products")} className={styles.button}>
+      <button
+        onClick={() => router.push("/products")}
+        className={styles.button}
+      >
         {"<--"}Назад
       </button>
     </div>
