@@ -11,7 +11,7 @@ const MatrixRainCard = ({ name, id, image, link }) => {
     canvas.width = canvas.offsetWidth;
     canvas.height = canvas.offsetHeight;
 
-    const fontSize = 12; // Размер символа
+    const fontSize = 10; // Размер символа
     const columns = Math.floor(canvas.width / fontSize); // Количество колонок
 
     // Создаём массив капель

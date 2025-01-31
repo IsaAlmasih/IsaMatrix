@@ -19,14 +19,28 @@ import HTMLFlipBook from "react-pageflip";
 const page = () => {
   const images3 = [
     {
-      name: "Что-то иное",
+      name: "React.",
       id: 1,
       image: image2.src,
       link: "/education/react",
       hasMatrixRain: false,
     },
     {
-      name: "Что-то иное",
+      name: "React Next js",
+      id: 1,
+      image: image2.src,
+      link: "/education/react",
+      hasMatrixRain: false,
+    },
+    {
+      name: "Python",
+      id: 1,
+      image: image2.src,
+      link: "/education/react",
+      hasMatrixRain: false,
+    },
+    {
+      name: "Django",
       id: 1,
       image: image2.src,
       link: "/education/react",
