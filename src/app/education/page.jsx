@@ -40,6 +40,13 @@ const page = () => {
       hasMatrixRain: false,
     },
     {
+      name: "Revit",
+      id: 1,
+      image: image2.src,
+      link: "/education/react",
+      hasMatrixRain: false,
+    },
+    {
       name: "Django",
       id: 1,
       image: image2.src,

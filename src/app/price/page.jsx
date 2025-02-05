@@ -16,15 +16,10 @@ const router=useRouter()
             <Link href={"/price/matrix"}>
               Акционерное Общество 'Матрица' (Matrix)
             </Link>
-            <Link href={"/price/tapatim"}>
-              ИП "Тапатим".
-            </Link>
-            <Link href={"/price/sdsioy"}>
-              Благотворительный фонд СДС и ОУ.
-            </Link>
-            <Link href={"/"}>
-              Ваша организация.
-            </Link>
+            <Link href={"/price/tapatim"}>ИП "Тапатим".</Link>
+            <Link href={"/price/sdsioy"}>Благотворительный фонд СДС и ОУ.</Link>
+            <Link href={"/"}>Ваша организация.</Link>
+            <Link href={"/"}>Ваша организация.</Link>
             {/* <MatrixRain></MatrixRain> */}
           </nav>
         </>

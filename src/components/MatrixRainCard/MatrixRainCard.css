@@ -46,7 +46,7 @@
 
 .matrix-grid-container {
   display: flex;
-  height: 300px;
-  width: 900px;
+  height: 350px;
+  width: 1000px;
   gap: 30px;
 }
