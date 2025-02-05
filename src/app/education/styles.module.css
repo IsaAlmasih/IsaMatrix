@@ -1,5 +1,4 @@
 .mainWrapper {
-  /* background-color: black; */
   flex-direction: column;
   display: flex;
   padding-top: 300px;
@@ -71,10 +70,17 @@
   display: flex;
 }
 
+
+.MatrixWrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 350px;
+  width: 65%;
+  gap: 20px;
+}
+
+
 @media (max-width: 390px) {
-  .mainWrapper {
-    padding-top: 100px;
-  }
   .images {
     display: flex;
     padding-top: 0;
@@ -95,4 +101,22 @@
     font-size: 25px;
     color: #01ff16;
   }
+
+  .MatrixWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    margin: auto;
+  }
+
+  .mainWrapper {
+    padding-top: 100px;
+    justify-content: flex-start;
+    display: flex;
+    gap: 10px;
+  }
+
 }
+

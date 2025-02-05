@@ -36,7 +36,7 @@ const page = () => {
       name: "Python",
       id: 1,
       image: image2.src,
-      link: "/education/react",
+      link: "/education/python",
       hasMatrixRain: false,
     },
     {
@@ -50,7 +50,7 @@ const page = () => {
       name: "Django",
       id: 1,
       image: image2.src,
-      link: "/education/react",
+      link: "/education/django",
       hasMatrixRain: false,
     },
   ];
@@ -82,7 +82,7 @@ const page = () => {
   return (
     <div key="1" className={styles.mainWrapper}>
       <div className={styles.text}>Выберите интересующую тему.</div>
-      <div className="matrix-grid-container">
+      <div className={styles.MatrixWrapper}>
         {images3 &&
           images3.map((image, index) => (
             <MatrixRainCard

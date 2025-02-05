@@ -1,6 +1,8 @@
 .matrix-card {
+  display: flex;
+  justify-content: center;
   position: relative;
-  width: 100%;
+  max-width: 200px;
   height: 100%;
   border-radius: 16px;
   overflow: hidden;
@@ -47,6 +49,19 @@
 .matrix-grid-container {
   display: flex;
   height: 350px;
-  width: 1000px;
+  width: 1300px;
   gap: 30px;
+}
+
+
+@media (max-width:400px) {
+  .matrix-content h2 {
+    font-size: 15px;
+  }
+  .matrix-content a {
+    font-size: 17px;
+  }
+  .matrix-card {
+    height: 150px;
+  }
 }
