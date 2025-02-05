@@ -39,8 +39,7 @@ const Header = () => {
 
         <div className={styles.navigation}>
           <Link href={"/"}>Главная страница</Link>
-          {/* <Link href={"/about"}>О нас</Link>
-        <Link href={"/"}>Контакты</Link> */}
+          <Link href={"/cart"}>Корзина</Link>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className={styles.openPopup}>
           <svg
@@ -77,6 +76,7 @@ const Header = () => {
                 <Link href={"/"}>Главная страница</Link>
                 <Link href={"/about"}>О нас</Link>
                 <Link href={"/"}>Контакты</Link>
+                <Link href={"/cart"}>Корзина</Link>
               </div>
             </div>
           </div>

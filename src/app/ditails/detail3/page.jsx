@@ -6,6 +6,9 @@ import "./page.css";
 
 import useStore from "../../../stores/cart";
 import { useState } from "react";
+import ImageWithModal from "@/components/ImageWithModal/ImageWithModal";
+
+import img1 from "../../../assets/education/djang.jpg";
 
 const page = () => {
 
@@ -54,10 +57,11 @@ const handleDecrease = (itemId) => {
         </div>
         <div className="detail-page__content">
           <div className="detail-page__image-holder">
-            <img
-              src="https://avatars.dzeninfra.ru/get-zen_doc/3721416/pub_600f86c5cd098e46b145f9d4_600f88c027add74df6519c3c/scale_1200"
+            <ImageWithModal
+              src={img1}
               alt=""
-              className="detail-page__image"
+              width={200}
+              height={200}
             />
             <div className="detail-page__thumbnails">
               <img
