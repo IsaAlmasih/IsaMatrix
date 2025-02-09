@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { MatrixRain } from "../MatrixRain/MatrixRain";
 import "./MatrixPopup.css";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const MatrixPopup = ({ isOpened }) => {
+  const [isOpen, setIsOpen] = useState(isOpened);
+
+  useEffect(() => {
+    setIsOpen(isOpened);
+  }, [isOpened]);
+  const router = useRouter();
+
   return (
-    <div className={`overlay ${isOpened ? "overlay_active" : ""}`}>
+    <div className={`overlay ${isOpen ? "overlay_active" : ""}`}>
       <div className="popup">
         <p className="popup__heading">Введите ваш ключ</p>
         <div className="popup__list">
@@ -24,9 +33,16 @@ const MatrixPopup = ({ isOpened }) => {
           <div className="popup__item">
             <p className="popup__item-heading">Ключ 5</p>
           </div>
-          <div className="popup__item">
-            <p className="popup__item-heading">Ключ 6</p>
-          </div>
+          <Link
+            onClick={() => {
+              router.push("/user");
+              setIsOpen(false);
+            }}
+            href="/user"
+            className="popup__item"
+          >
+            <p className="popup__item-heading">Личный кабинет</p>
+          </Link>
           <div className="popup__item">
             <p className="popup__item-heading">Ключ 7</p>
           </div>
