@@ -80,7 +80,7 @@ const page = () => {
   }, [width]);
 
   return (
-    <div key="1" className={styles.mainWrapper}>
+    <div key="10" className={styles.mainWrapper}>
       <div className={styles.text}>Выберите интересующую тему.</div>
       <div className={styles.MatrixWrapper}>
         {images3 &&

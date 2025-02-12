@@ -1,4 +1,5 @@
 .matrix-card {
+  background-color: black;
   display: flex;
   justify-content: center;
   position: relative;

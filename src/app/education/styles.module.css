@@ -1,11 +1,12 @@
 .mainWrapper {
+  background-color: #000000 !important; 
   flex-direction: column;
   display: flex;
   padding-top: 300px;
   align-items: center;
   height: 100vh;
   width: 100%;
-  z-index: -5;
+  z-index: 1;
 }
 
 
@@ -17,9 +18,11 @@
   display: flex;
 }
 
+
 .secondPage {
   background-color: rgb(2, 2, 105);
 }
+
 
 .pageCardHolder {
   width: 100%;
@@ -30,11 +33,13 @@
   grid-auto-rows: 1fr;
 }
 
+
 .text {
   font-size: 25px;
   color: #01ff16;
   margin-bottom: 40px;
 }
+
 
 .wrapper {
   display: flex;
@@ -53,10 +58,12 @@
   z-index: 9999999999;
 }
 
+
 .image img {
   max-width: 200px;
   object-fit: cover;
 }
+
 
 .image {
   display: flex;
@@ -66,9 +73,11 @@
   justify-content: center;
 }
 
+
 .images {
   display: flex;
 }
+
 
 
 .MatrixWrapper {
@@ -78,6 +87,7 @@
   width: 65%;
   gap: 20px;
 }
+
 
 
 @media (max-width: 390px) {
@@ -112,6 +122,7 @@
   }
 
   .mainWrapper {
+    background-color: #000000;
     padding-top: 100px;
     justify-content: flex-start;
     display: flex;

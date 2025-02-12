@@ -38,7 +38,7 @@ const Header = () => {
         </button>
 
         <div className={styles.navigation}>
-          <Link href={"/"}>Главная страница</Link>
+          {/* <Link href={"/"}>Главная страница</Link> */}
           <Link href={"/cart"}>Корзина</Link>
         </div>
         <button onClick={() => setIsOpen(!isOpen)} className={styles.openPopup}>
