@@ -71,12 +71,12 @@ const Book = (props) => {
           </div>
         </HTMLFlipBook>
       </div>
-      <button
+      {/* <button
         onClick={() => router.push("/products")}
         className={styles.button}
       >
         {"<--"}Назад
-      </button>
+      </button> */}
     </div>
   );
 };

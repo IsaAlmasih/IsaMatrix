@@ -25,6 +25,17 @@
     font-size: 30px;
 }
 
+
+
+
+@media (max-width: 390px) {
+    .wrapper {
+        font-size: 20px;
+    }
+}
+
+
+
 @media (max-width: 700px) {
     .wrapper p {
         font-size: 20px;

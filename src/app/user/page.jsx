@@ -1,9 +1,20 @@
 import React from "react";
 
+import styles from "./styles.module.css"
+
 const page = () => {
   return (
     <div id="wrapper-house">
-      {" "}
+      <div>
+        <div className={styles.wrapper}>
+          <div>Вход 1</div>
+          <div>Вход 2</div>
+          <div>Вход 3</div>
+          <div>Вход 4</div>
+          <div>Вход 5</div>
+          <div>Вход 6</div>
+        </div>
+      </div>{" "}
       <div className="house" id="h">
         <div className="h-lights">
           <div className="h-light"></div>

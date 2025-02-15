@@ -101,6 +101,7 @@ export const MatrixRain = () => {
   return (
     <div
       style={{
+        backgroundColor:"black",
         position: "fixed",
         top: 0,
         left: 0,

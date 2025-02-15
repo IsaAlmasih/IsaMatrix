@@ -7,12 +7,14 @@ import "./page.css";
 import useStore from "../../../stores/cart";
 import { useState } from "react";
 
+import imag1 from "../../../assets/papir/papyrus2.jpg";
+
 const page = () => {
 
 const product = {
   id: 0,
   name: "Папирус 1",
-  imag: "/",
+  imag: imag1,
   price: "0",
   quantity: "0",
 };

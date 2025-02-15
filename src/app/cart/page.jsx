@@ -5,6 +5,7 @@ import useStore from "../../stores/cart"; // Импортируйте ваш Zus
 import Head from "next/head";
 import styles from "./styles.module.css";
 import{useRouter} from "next/navigation"
+import CartItem from "../../components/CartItem/cartItem"
 
 const CartPage = () => {
   const {
@@ -42,9 +43,12 @@ const CartPage = () => {
           <ul style={{ listStyleType: "none", padding: 0 }}>
             {cart.map((item) => (
               <li key={item.id} style={{ margin: "10px 0" }}>
-                <span>
-                  {item.name} (x{item.quantity}) - {item.price}₽
-                </span>
+                <CartItem
+                  name={item.name}
+                  quantity={item.quantity}
+                  price={item.price}
+                  imag={item.imag}
+                ></CartItem>
                 <button
                   onClick={() => handleIncrease(item.id)}
                   style={{ marginLeft: "10px" }}

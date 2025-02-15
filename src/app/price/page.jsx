@@ -10,19 +10,16 @@ const page = () => {
 const router=useRouter()
   return (
     <div>
-      <div className={styles.wrapper}>
-        <>
-          <nav className={styles.wrapper}>
-            <Link href={"/price/matrix"}>
-              Акционерное Общество 'Матрица' (Matrix)
-            </Link>
-            <Link href={"/price/tapatim"}>ИП "Тапатим".</Link>
-            <Link href={"/price/sdsioy"}>Благотворительный фонд СДС и ОУ.</Link>
-            <Link href={"/"}>Ваша организация.</Link>
-            <Link href={"/"}>Ваша организация.</Link>
-            {/* <MatrixRain></MatrixRain> */}
-          </nav>
-        </>
+      <div>
+        <nav className={styles.wrapper}>
+          <Link href={"/price/matrix"}>
+            Акционерное Общество 'Матрица' (Matrix)
+          </Link>
+          <Link href={"/price/tapatim"}>ИП "Тапатим".</Link>
+          <Link href={"/price/sdsioy"}>Благотворительный фонд СДС и ОУ.</Link>
+          <Link href={"/"}>Ваша организация.</Link>
+          <Link href={"/"}>Ваша организация.</Link>
+        </nav>
         <center>
           {/* <p>
             Здравствуйте. На данном этапе мы только формируем всё и
@@ -39,8 +36,7 @@ const router=useRouter()
           {"<--"}Назад
         </button>
       </div>
-
-      <MatrixRain></MatrixRain>
+      {/* <MatrixRain></MatrixRain> */}
     </div>
   );
 };

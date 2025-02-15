@@ -36,11 +36,10 @@
 /* Стили страниц */
 .firstPage {
   padding: 16px;
-  /* background-color: rgb(162, 17, 17); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  text-align: justify;
+  /* text-align: justify; */
   color: rgb(57, 246, 0);
   overflow-y: auto;
   font-size: 20px;
