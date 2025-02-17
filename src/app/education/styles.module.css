@@ -1,5 +1,5 @@
 .mainWrapper {
-  background-color: #000000 !important; 
+  /* background-color: #000000 !important;  */
   flex-direction: column;
   display: flex;
   padding-top: 300px;

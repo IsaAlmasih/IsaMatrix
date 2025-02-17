@@ -9,15 +9,11 @@ import Link from "next/link";
 const page = () => {
 const router=useRouter()
   return (
-    <div>
-      <div>
+      <div className={styles.wrappe}>
         <nav className={styles.wrapper}>
-          <Link href={"/price/matrix"}>
-            Акционерное Общество 'Матрица' (Matrix)
-          </Link>
-          <Link href={"/price/tapatim"}>ИП "Тапатим".</Link>
-          <Link href={"/price/sdsioy"}>Благотворительный фонд СДС и ОУ.</Link>
-          <Link href={"/"}>Ваша организация.</Link>
+          <Link href={"/price/matrix"}>АО "Матрица" (Matrix)</Link>
+          <Link href={"/price/tapatim"}>ИП "Тапатим"</Link>
+          <Link href={"/price/sdsioy"}>Благотворительный фонд "СДС и ОУ"</Link>
           <Link href={"/"}>Ваша организация.</Link>
         </nav>
         <center>
@@ -35,9 +31,8 @@ const router=useRouter()
         <button onClick={() => router.push("/")} className={styles.butt}>
           {"<--"}Назад
         </button>
+      <MatrixRain></MatrixRain>
       </div>
-      {/* <MatrixRain></MatrixRain> */}
-    </div>
   );
 };
 

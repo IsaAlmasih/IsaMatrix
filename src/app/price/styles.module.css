@@ -1,7 +1,7 @@
 .wrapper {
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
     font-size: 30px;
-    color: #088a0c;
+    color: #00ff08;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,11 @@
     height: 100vh;
     width: 100%;
     position: absolute;
+    z-index: 10;
+}
+
+
+.wrappe {
     z-index: 10;
 }
 
@@ -26,15 +31,24 @@
 }
 
 
-
-
 @media (max-width: 390px) {
     .wrapper {
-        font-size: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 }
 
 
+@media (max-width: 600px) {
+    .wrapper {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
 
 @media (max-width: 700px) {
     .wrapper p {

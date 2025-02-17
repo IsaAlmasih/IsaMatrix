@@ -4,14 +4,19 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 
 import React from "react";
+import { MatrixRain } from "@/components/MatrixRain/MatrixRain";
 
 const page = () => {
   return (
-    <div className={styles.wrapper}>
-      <Link href={"/"}>Название.</Link>
-      <a href={"/Реквизиты.docx"}>Политика.</a>
-      <Link href={"/price"}>Реквизиты.</Link>
-      <Link href={"/price"}>Пользовательское..</Link>
+    <div className={styles.wrappe}>
+      <div className={styles.wrapper}>
+        <Link href={"/"}>Вернуться.</Link>
+        <Link href={"/UserAgreement.pdf"}>Пользовательское соглашение .</Link>
+        <a href={"/deta_Ip.pdf"}>Политика.</a>
+        <Link href={"/contacts.pdf"}>Реквизиты.</Link>
+        <Link href={"/PrivacyPolicy.pdf"}>Пользовательское..</Link>
+      </div>
+      <MatrixRain></MatrixRain>
     </div>
   );
 };
