@@ -2,7 +2,7 @@
   /* background-color: #000000 !important;  */
   flex-direction: column;
   display: flex;
-  padding-top: 300px;
+  padding-top: 230px;
   align-items: center;
   height: 100vh;
   width: 100%;
@@ -79,7 +79,6 @@
 }
 
 
-
 .MatrixWrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -87,7 +86,6 @@
   width: 65%;
   gap: 20px;
 }
-
 
 
 @media (max-width: 390px) {
