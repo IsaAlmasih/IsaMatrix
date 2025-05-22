@@ -10,55 +10,55 @@
 
 .text {
     color: #55ff00;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 
-@media (min-width: 380px) {
+@media (min-width: 360px) {
     .text {
-    font-size: 40px;
+    font-size: 35px;
     } 
 }
 
 @media (min-width: 480px) {
     .text {
-    font-size: 60px;
+    font-size: 25px;
     } 
 }
 
 @media (min-width: 768px) {
     .text {
-    font-size: 70px;
+    font-size: 25px;
     }  
 }
 
 @media (min-width: 962px) {
     .text {
-    font-size: 80px;
+    font-size: 30px;
     }  
 }
 
 @media (min-width: 1024px) {
     .text {
-    font-size: 80px;
+    font-size: 40px;
     } 
 }
 
 @media (min-width: 1280px) {
     .text {
-    font-size: 80px;
+    font-size: 40px;
     } 
 }
 
 @media (min-width: 1536px) {
     .text {
-    font-size: 80px;
+    font-size: 40px;
     } 
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2920px) {
     .text {
-    font-size: 90px;
+    font-size: 190px;
     }  
 }
 
