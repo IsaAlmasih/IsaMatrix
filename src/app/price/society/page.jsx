@@ -8,15 +8,16 @@ import { MatrixRain } from "@/components/MatrixRain/MatrixRain";
 
 const page = () => {
   return (
-      <div className={styles.wrapper}>
-          <div className={styles.text}>
-            <div>Выпущено тап 34.</div>
-            <div>Стоимость тапы 20 рублей.</div>
-            <div>Бюджет Акционерного общества 680 рублей.</div>
-            <Link href="/price">Вернуться.</Link>
-          </div>
-          <MatrixRain></MatrixRain>
+    <div className={styles.wrapper}>
+      <div className={styles.text}>
+        <div>Выпущено тап 34.</div>
+        <div>Стоимость тапы 20 рублей.</div>
+        <Link href="/price/society/othot">Отчёт 2024</Link>
+        <div>Бюджет Акционерного общества 680 рублей.</div>
+        <Link href="/price">Вернуться.</Link>
       </div>
+      <MatrixRain></MatrixRain>
+    </div>
   );
 };
 
