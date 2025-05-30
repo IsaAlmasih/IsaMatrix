@@ -31,13 +31,19 @@
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 370px) {
     .wrapper {
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     }
+    .wrappe {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
 }
 
 

@@ -10,10 +10,10 @@ const page = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.text}>
-        <div>Выпущено тап 34.</div>
-        <div>Стоимость тапы 20 рублей.</div>
+        <div>Выпущено тап 34 + 50.</div>
+        <div>Стоимость тапы 115 рублей.</div>
         <Link href="/price/society/othot">Отчёт 2024</Link>
-        <div>Бюджет Акционерного общества 680 рублей.</div>
+        <div>Бюджет Акционерного общества 9680 рублей.</div>
         <Link href="/price">Вернуться.</Link>
       </div>
       <MatrixRain></MatrixRain>
