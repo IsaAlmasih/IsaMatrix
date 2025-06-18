@@ -130,6 +130,7 @@
 @media (max-width: 480px) {
   .header {
     padding: 12px;
+    font-size: 25px;
   }
   .logo {
     font-size: 20px;

@@ -15,44 +15,50 @@
 
 
 @media (min-width: 360px) {
-    .text {
-    font-size: 35px;
+    .text a {
+    font-size: 25px;
     } 
 }
 
 @media (min-width: 480px) {
     .text {
-    font-size: 25px;
+    font-size: 35px;
     } 
 }
 
 @media (min-width: 768px) {
     .text {
-    font-size: 25px;
+    font-size: 45px;
     }  
 }
 
 @media (min-width: 962px) {
     .text {
-    font-size: 30px;
+    font-size: 45px;
     }  
 }
 
 @media (min-width: 1024px) {
     .text {
-    font-size: 40px;
+    font-size: 50px;
     } 
 }
 
 @media (min-width: 1280px) {
     .text {
-    font-size: 40px;
+    font-size: 50px;
     } 
 }
 
 @media (min-width: 1536px) {
     .text {
-    font-size: 40px;
+    font-size: 50px;
+    } 
+}
+
+@media (min-width: 2300px) {
+    .text {
+    font-size: 150px;
     } 
 }
 

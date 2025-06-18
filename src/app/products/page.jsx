@@ -19,12 +19,6 @@ import Category from "@/components/Category/Category";
 
 const products = [
   {
-    id: 10,
-    name: "Услуги",
-    image: Imag1,
-    link: "/products/services",
-  },
-  {
     id: 20,
     name: "Папирус",
     image: Imag3,

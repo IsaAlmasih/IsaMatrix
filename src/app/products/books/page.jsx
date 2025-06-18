@@ -50,7 +50,7 @@ const books = [
     id: 4,
     type: "book",
     image,
-    name: "Здесь может быть ваша книга",
+    name: "Сотрудничество.",
     isbn: 123125135135,
     link: "/ditails/detail4",
   },
@@ -62,8 +62,6 @@ const page = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.text}>Это страница книг!</div>
-      <div className={styles.image}>
-        Книги
         <div className="category-list">
           {/* {" "}
           {images.map((src, index) => (
@@ -74,7 +72,6 @@ const page = () => {
             books.map(({ id, name, image, link }) => (
               <Category id={id} categoryName={name} image={image} href={link} />
             ))}
-        </div>
       </div>
       <button
         onClick={() => router.push("/products")}
