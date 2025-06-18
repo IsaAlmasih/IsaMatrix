@@ -9,10 +9,10 @@ import image1 from "../../../assets/142221.jpg";
 import image2 from "../../../assets/11111111.jpg";
 
 const services = [
-  { id: 1, name: "Навзание услуги", image, description: "...", link: "" },
-  { id: 2, name: "Навзание услуги", image, description: "...", link: "" },
-  { id: 3, name: "Навзание услуги", image, description: "...", link: "" },
-  { id: 4, name: "Навзание услуги", image, description: "...", link: "" },
+  { id: 1, name: "Товар один.", image, description: "...", link: "" },
+  { id: 2, name: "Товар два.", image, description: "...", link: "" },
+  { id: 3, name: "Товар три", image, description: "...", link: "" },
+  { id: 4, name: "Товар четыре", image, description: "...", link: "" },
 ];
 
 import { useRouter } from "next/navigation";
@@ -22,9 +22,9 @@ const page = () => {
 
   return (
     <div className={styles.wrapper}>
-      <div className={styles.text}>Страница услуг</div>
+      {/* <div className={styles.text}>Страница товаров</div> */}
       <div className={styles.image}>
-        Услуги
+        Страница товаров
         <div className="category-list">
           {services.map(({ id, name, image, link }) => (
             <Category id={id} categoryName={name} image={image} href={link} />

@@ -1,9 +1,9 @@
 .category-list {
   width: 100%;
-  max-width: 960px;
+  max-width: 1260px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 0px 16px;
   grid-auto-rows: 350px;
   gap: 32px;

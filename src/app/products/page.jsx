@@ -31,6 +31,12 @@ const products = [
     link: "/products/papirus",
   },
   {
+    id: 9,
+    name: "Товары для творчества",
+    image: Imag1,
+    link: "/products/services",
+  },
+  {
     id: 30,
     name: "Книги",
     image: Imag2,
