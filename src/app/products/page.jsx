@@ -38,7 +38,7 @@ const products = [
   },
   {
     id: 40,
-    name: "Гирлянды",
+    name: "Новогодние товары",
     image: Imag5,
     link: "/products/hyrlands",
   },

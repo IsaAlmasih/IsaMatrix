@@ -1,8 +1,11 @@
 import Image from "next/image";
+
 import styles from "./styles.module.css";
-// import React, { useEffect, useRef, useState } from "react";
+
 import Link from "next/link";
+
 import { MatrixRain } from "../../components/MatrixRain/MatrixRain";
+
 export default function Home() {
   return (
     <>
@@ -13,6 +16,7 @@ export default function Home() {
           <Link href={"/keys"}>Книги.</Link>
           <Link href={"/products"}>Магазины.</Link>
           <Link href={"/test"}>Тесты.</Link>
+          <Link href={"/contacts"}>Контакты. Сотрудничество.</Link>
         </div>
         <MatrixRain></MatrixRain>
       </nav>

@@ -18,6 +18,8 @@
 
 .text a {
   font-size: 30px;
+  text-decoration: none;
+  color: #00ff04;
 }
 
 

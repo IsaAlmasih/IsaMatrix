@@ -1,11 +1,11 @@
-'use client'
+"use client";
 // pages/cart.js
 import React from "react";
 import useStore from "../../stores/cart"; // Импортируйте ваш Zustand store
 import Head from "next/head";
 import styles from "./styles.module.css";
-import{useRouter} from "next/navigation"
-import CartItem from "../../components/CartItem/cartItem"
+import { useRouter } from "next/navigation";
+import CartItem from "../../components/CartItem/cartItem";
 
 const CartPage = () => {
   const {
@@ -16,7 +16,7 @@ const CartPage = () => {
     clearCart,
   } = useStore();
 
-  const router=useRouter()
+  const router = useRouter();
 
   const handleIncrease = (itemId) => {
     increaseQuantity(itemId);
@@ -34,10 +34,12 @@ const CartPage = () => {
     clearCart();
   };
 
+  console.log(cart);
+
   return (
     <div className={styles.wrapper}>
       {cart.length === 0 ? (
-        <p>Ваша корзина пуста.</p>
+        <p>Ваш кабинет пуст.</p>
       ) : (
         <div>
           <ul style={{ listStyleType: "none", padding: 0 }}>
@@ -80,6 +82,17 @@ const CartPage = () => {
             }}
           >
             Оплатить.
+          </button>
+          <button
+            onClick={handleClear}
+            style={{
+              marginTop: "20px",
+              backgroundColor: "red",
+              color: "white",
+              padding: "10px",
+            }}
+          >
+            Очистить корзину
           </button>
           <button
             onClick={handleClear}

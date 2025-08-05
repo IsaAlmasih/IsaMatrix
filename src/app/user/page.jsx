@@ -7,39 +7,39 @@ const page = () => {
     <div id="wrapper-house">
       <div>
         <div className={styles.wrapper}>
-          <div>Вход 1</div>
+          {/* <div>Вход 1</div>
           <div>Вход 2</div>
           <div>Вход 3</div>
           <div>Вход 4</div>
           <div>Вход 5</div>
-          <div>Вход 6</div>
+          <div>Вход 6</div> */}
         </div>
       </div>{" "}
-      <div className="house" id="h">
-        <div className="h-lights">
-          <div className="h-light"></div>
-          <div className="h-light"></div>
-          <div className="h-light"></div>
-          <div className="h-light"></div>
-          <div className="h-light"></div>
-          <div className="h-light"></div>
+      <div className={styles.house} id="h">
+        <div className={styles.hLights}>
+          <div className={styles.hLights}></div>
+          <div className={styles.hLights}></div>
+          <div className={styles.hLights}></div>
+          <div className={styles.hLights}></div>
+          <div className={styles.hLights}></div>
+          <div className={styles.hLights}></div>
         </div>
-        <div className="h-shadow"></div>
-        <div className="alt">
-          <div className="alt__front face"> </div>
-          <div className="alt__back face"> </div>
-          <div className="alt__right face"> </div>
-          <div className="alt__left face"> </div>
-          <div className="alt__top face">
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
-            <div className="light"></div>
+        <div className={styles.hShadow}></div>
+        <div className={styles.alt}>
+          <div className={styles.altFrontFace}> </div>
+          <div className={styles.altBackFace}> </div>
+          <div className={styles.altRightFace}> </div>
+          <div className={styles.altLeftFace}> </div>
+          <div className={styles.altTopFace}>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
+            <div className={styles.light}></div>
           </div>
           <div className="alt__bottom face"> </div>
         </div>
@@ -368,13 +368,13 @@ const page = () => {
           </div>
           <div className="mesa-shadow"></div>
         </div>
-        <div className="tablet">
-          <div className="tablet__front face"> </div>
-          <div className="tablet__back face"> </div>
-          <div className="tablet__right face"> </div>
-          <div className="tablet__left face"> </div>
-          <div className="tablet__top face"> </div>
-          <div className="tablet__bottom face"> </div>
+        <div className={styles.tablet}>
+          <div className={styles.tabletFrontFace}> </div>
+          <div className={styles.tabletBackFace}> </div>
+          <div className={styles.tabletRightFace}> </div>
+          <div className={styles.tabletLeftFace}> </div>
+          <div className={styles.tabletTopFace}> </div>
+          <div className={styles.tabletBottomFace}> </div>
         </div>
       </div>
     </div>

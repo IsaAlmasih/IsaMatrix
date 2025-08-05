@@ -2,6 +2,7 @@
 import React, { useRef, useState } from 'react'
 
 import styles from './styles.module.css'
+
 import { Link } from 'next/link';
 
 import ImageWithModal from '@/components/ImageWithModal/ImageWithModal';

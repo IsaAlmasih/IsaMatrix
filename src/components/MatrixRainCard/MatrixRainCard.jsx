@@ -17,7 +17,7 @@ const MatrixRainCard = ({ name, id, image, link }) => {
     // Создаём массив капель
     const drops = Array.from({ length: columns }, () => ({
       y: -Math.random() * canvas.height, // Начальная позиция строго сверху
-      speed: 4 + Math.random() * 10, // Увеличиваем диапазон скоростей для капель
+      speed: 4 + Math.random() * 5, // Увеличиваем диапазон скоростей для капель
     }));
 
     const draw = () => {

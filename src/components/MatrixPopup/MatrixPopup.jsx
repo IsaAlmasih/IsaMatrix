@@ -43,9 +43,9 @@ const MatrixPopup = ({ isOpened }) => {
           >
             <p className="popup__item-heading">Личный кабинет</p>
           </Link>
-          <div className="popup__item">
+          <Link href={"/LoginPage"} className="popup__item">
             <p className="popup__item-heading">Ключ 7</p>
-          </div>
+          </Link>
           <div className="popup__item">
             <p className="popup__item-heading">Ключ 8</p>
           </div>

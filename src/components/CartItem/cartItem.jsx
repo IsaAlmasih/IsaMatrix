@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 const cartItem = (props) => {
   return (
@@ -8,9 +8,9 @@ const cartItem = (props) => {
       <div className={styles.name}>{props.name}</div>
       <div className={styles.quantity}>{props.quantity}</div>
       <div className={styles.price}>{props.price}</div>
-      <img src={props.imag}/>
+      <img src={props.imag.src} />
     </div>
   );
-}
+};
 
-export default cartItem
+export default cartItem;
