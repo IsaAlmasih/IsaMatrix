@@ -30,16 +30,6 @@
     background-repeat: no-repeat;
 }
 
-.button {
-    font-size: 20px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    color: rgb(254, 7, 7);
-    background-color: transparent;
-    border: 30;
-    z-index: 100;
-}
 
 .firstPage {
     background-color: blueviolet;
@@ -64,13 +54,14 @@
 
 .button {
     position: absolute;
-    height: 50px;
-    width: 70px;
-    top: 80%;
-    right: 50px;
-    z-index: 100;
-    color: #fff4f4;
+    height: 40px;
+    width: 120px;
+    margin-top: 500px;
+    right: 550px;
+    color: #00ff5e;
+    background-color: transparent;
 }
+
 
 @media (max-width: 380px) {
  .wrapper {

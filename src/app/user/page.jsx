@@ -5,16 +5,6 @@ import styles from "./styles.module.css"
 const page = () => {
   return (
     <div id="wrapper-house">
-      <div>
-        <div className={styles.wrapper}>
-          {/* <div>Вход 1</div>
-          <div>Вход 2</div>
-          <div>Вход 3</div>
-          <div>Вход 4</div>
-          <div>Вход 5</div>
-          <div>Вход 6</div> */}
-        </div>
-      </div>{" "}
       <div className={styles.house} id="h">
         <div className={styles.hLights}>
           <div className={styles.hLights}></div>

@@ -47,7 +47,6 @@ const page = () => {
   return (
     <div>
       <div className={styles.wrapper}>
-        <div className={styles.text}></div>
         <div className={styles.image}>
           Страница товаров папируса.
           <div className="category-list">

@@ -29,7 +29,6 @@
   z-index: 2;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 80px;
 }
 
 .matrix-content h2 {
@@ -55,7 +54,7 @@
 }
 
 
-@media (max-width:400px) {
+@media (max-width:390px) {
   .matrix-content h2 {
     font-size: 15px;
   }
@@ -66,3 +65,4 @@
     height: 150px;
   }
 }
+

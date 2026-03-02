@@ -39,8 +39,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* text-align: justify; */
-  color: rgb(57, 246, 0);
+  color: rgb(0, 231, 196);
   overflow-y: auto;
   font-size: 20px;
 }

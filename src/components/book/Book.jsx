@@ -41,15 +41,14 @@ const Book = (props) => {
           height={isMobile ? 450 : 700}
           className={styles.book}
         >
-          <div className={styles.firstPage}>
-            <>{props.text1}</>
-          </div>
-          <div className={styles.secondPage}>
-            {/* <textarea
-              name=""
-              defaultValue="Привет привет привет привет"
-            ></textarea> */}
-            <>{props.text2}</>
+          <div
+            className={styles.firstPage}
+            dangerouslySetInnerHTML={{ __html: props.text1 }}
+          ></div>
+          <div
+            className={styles.secondPage}
+            dangerouslySetInnerHTML={{ __html: props.text2 }}
+          >
           </div>
           <div className={styles.thirdPage}>
             <>{props.text3}</>

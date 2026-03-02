@@ -108,7 +108,7 @@ const CartPage = () => {
         </div>
       )}
       <button
-        onClick={() => router.push("/products")}
+        onClick={() => router.push("/products/papirus")}
         className={styles.button}
       >
         {"<--"}Назад

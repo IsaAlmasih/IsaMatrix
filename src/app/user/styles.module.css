@@ -333,10 +333,7 @@
   }
 
 
-/* Не понятно как их прописывать
-
-
- . wrapper-house {
+.wrapper-house {
     color: var(--foreground);
     background: var(--background);
     font-family: Arial, Helvetica, sans-serif;
@@ -353,13 +350,7 @@
     overflow: hidden;
     cursor: pointer;
     background-image: radial-gradient(circle, #171424, #000);
-  } */
-
-
-
-
-
-
+ }
 
 
 
