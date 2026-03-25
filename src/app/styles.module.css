@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -10;
+}
+
+.text {
+    color: #55ff00;
+    font-size: 55px;
+}
+
+
+/* @media (max-width: 1536px) {
+    .text {
+    font-size: 50px;
+    } 
+} */
+
+
+/* @media (max-width: 1280px) {
+    .text {
+    font-size: 50px;
+    } 
+}
+
+
+@media (max-width: 1024px) {
+    .text {
+    font-size: 50px;
+    } 
+}
+
+
+@media (max-width: 768px) {
+    .text {
+    font-size: 45px;
+    }  
+}
+
+
+@media (max-width: 480px) {
+    .text {
+    font-size: 35px;
+    } 
+} */
+
+
+
+
+

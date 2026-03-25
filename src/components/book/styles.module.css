@@ -39,15 +39,20 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgb(0, 231, 196);
+  border: 3px solid rgb(30, 41, 14);
   overflow-y: auto;
   font-size: 20px;
 }
 
+
 .secondPage {
   padding: 16px;
+  display: block; /* или inline-block */
+  margin-bottom: 3px; /* чуть пространства между ссылками */
+  font-size: 19px;
   background-size: contain;
   background-repeat: no-repeat;
+  border: 3px solid rgb(30, 41, 14);
   background-position: center;
   overflow-y: auto;
 }
@@ -60,13 +65,3 @@
   overflow-y: auto;
 }
 
-@media (max-width: 380px) {
-  .wrapper {
-    height: 50% !important;
-    width: 70%;
-  }
-  .book {
-    min-width: 0 !important;
-    min-height: 0px !important;
-  }
-}

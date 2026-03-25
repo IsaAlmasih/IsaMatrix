@@ -37,8 +37,8 @@ const Book = (props) => {
     <div className={styles.wrapper}>
       <div className={styles.wrapper}>
         <HTMLFlipBook
-          width={isMobile ? 330 : 550}
-          height={isMobile ? 450 : 700}
+          width={isMobile ? 500 : 500}
+          height={isMobile ? 600 : 600}
           className={styles.book}
         >
           <div
@@ -70,14 +70,16 @@ const Book = (props) => {
           </div>
         </HTMLFlipBook>
       </div>
-      {/* <button
-        onClick={() => router.push("/products")}
-        className={styles.button}
-      >
-        {"<--"}Назад
-      </button> */}
     </div>
   );
 };
 
 export default Book;
+
+
+
+
+
+
+
+
